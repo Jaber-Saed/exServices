@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EnrollService } from '../Services/enroll.service';
 
 @Component({
   selector: 'app-javascript',
@@ -15,6 +16,9 @@ export class JavascriptComponent implements OnInit {
   }
   title: string = 'JavaScript';
 
- 
+  OnEnroll() {
+    const enrollService =new EnrollService();
+    enrollService.OnEnrollClicked(this.title)
+  }
 
 }

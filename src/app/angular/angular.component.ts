@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EnrollService } from '../Services/enroll.service';
 
 @Component({
   selector: 'app-angular',
@@ -15,5 +16,10 @@ export class AngularComponent implements OnInit {
   }
 
   title: string = 'Angulr';
+
+  OnEnroll() {
+    const enrollService =new EnrollService;
+    enrollService.OnEnrollClicked(this.title)
+  }
 
 }
