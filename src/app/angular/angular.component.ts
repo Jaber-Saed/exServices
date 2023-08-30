@@ -15,8 +15,5 @@ export class AngularComponent implements OnInit {
   }
 
   title: string = 'Angulr';
-  
-  onEnroll() {
-    alert(`Thank you for enrolling to ` + this.title + `course.`)
-  }
+
 }

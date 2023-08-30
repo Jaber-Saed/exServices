@@ -15,8 +15,6 @@ export class JavascriptComponent implements OnInit {
   }
   title: string = 'JavaScript';
 
-  onEnroll() {
-    alert(`Thank you for enrolling to ` + this.title + `course.`)
-  }
+ 
 
 }
