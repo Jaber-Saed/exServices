@@ -4,7 +4,7 @@ import { EnrollService } from './Services/enroll.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [EnrollService]
+  // providers: [EnrollService]
 })
 export class AppComponent {
   title = 'exServices';
