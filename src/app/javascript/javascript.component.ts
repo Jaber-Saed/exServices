@@ -4,21 +4,19 @@ import { EnrollService } from '../Services/enroll.service';
 @Component({
   selector: 'app-javascript',
   templateUrl: './javascript.component.html',
-  styleUrls: ['./javascript.component.css']
+  styleUrls: ['./javascript.component.css'],
+  providers: [EnrollService]
 })
 export class JavascriptComponent implements OnInit {
-  constructor() { }
-
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
+  constructor(private enrollService: EnrollService) {
 
   }
+
+  ngOnInit(): void { }
   title: string = 'JavaScript';
 
   OnEnroll() {
-    const enrollService =new EnrollService();
-    enrollService.OnEnrollClicked(this.title)
+    this.enrollService.OnEnrollClicked(this.title)
   }
 
 }
