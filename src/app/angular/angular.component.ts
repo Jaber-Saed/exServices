@@ -14,5 +14,9 @@ export class AngularComponent implements OnInit {
     //Add 'implements OnInit' to the class.
   }
 
-  title: string = 'Angulr'
+  title: string = 'Angulr';
+  
+  onEnroll() {
+    alert(`Thank you for enrolling to ` + this.title + `course.`)
+  }
 }
